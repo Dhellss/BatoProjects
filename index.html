@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover" />
+<meta name="theme-color" content="#04202c" />
+<meta name="description" content="Project Bato: Crocodile Under Funds - a satirical survival game about public funds and accountability." />
+<meta name="mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+<title>Project Bato: Crocodile Under Funds</title>
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div id="game-container"></div>
+
+  <noscript>
+    <p class="fallback">This game needs JavaScript enabled to run.</p>
+  </noscript>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/phaser/3.70.0/phaser.min.js"></script>
+
+  <script src="systems/GameSettings.js"></script>
+  <script src="systems/AudioSystem.js"></script>
+  <script src="systems/ScoreSystem.js"></script>
+  <script src="systems/HungerSystem.js"></script>
+  <script src="systems/AbilitySystem.js"></script>
+  <script src="systems/AchievementSystem.js"></script>
+  <script src="systems/GameData.js"></script>
+  <script src="systems/UI.js"></script>
+
+  <script src="scenes/BootScene.js"></script>
+  <script src="scenes/MainMenu.js"></script>
+  <script src="scenes/CharacterSelection.js"></script>
+  <script src="scenes/AchievementsScene.js"></script>
+  <script src="scenes/SettingsScene.js"></script>
+  <script src="scenes/CreditsScene.js"></script>
+  <script src="scenes/GameScene.js"></script>
+  <script src="scenes/PauseScene.js"></script>
+  <script src="scenes/GameOverScene.js"></script>
+
+  <script>
+    // Phaser is the one external dependency; without it the page is a blank
+    // blue box with no explanation.
+    if (typeof Phaser === 'undefined') {
+      document.getElementById('game-container').innerHTML =
+        '<p class="fallback">Could not load the game engine.<br />Check your internet connection and reload.</p>';
+    }
+  </script>
+  <script src="game.js"></script>
+</body>
+</html>
