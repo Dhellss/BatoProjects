@@ -1,0 +1,1 @@
+Project Bato is an underwater arcade game where players control a crocodile that eats money to survive while avoiding harmful obstacles. The game aims to make political and social awareness more fun, interactive, and engaging for students and young adults.
